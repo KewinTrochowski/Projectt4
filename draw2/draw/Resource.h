@@ -4,7 +4,7 @@
 //
 
 #define IDS_APP_TITLE			103
-
+#define PI  3.141592
 #define IDR_MAINFRAME			128
 #define IDD_DRAW_DIALOG	102
 #define IDD_ABOUTBOX			103

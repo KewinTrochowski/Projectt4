@@ -1,3 +1,22 @@
-﻿  stdafx.cpp
-  draw2.cpp
-  draw.vcxproj -> C:\Users\User\Desktop\draw2\Debug\draw2.exe
+﻿  draw2.cpp
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(85,16): warning C4305: 'argument': truncation from 'int' to 'BYTE'
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(85,22): warning C4309: 'argument': truncation of constant value
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(132,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(133,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(134,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(141,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(142,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(143,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(158,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(159,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(160,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(167,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(168,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(169,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(190,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(191,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(192,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(199,12): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(200,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\User\Documents\GitHub\Projekt4\draw2\draw\draw2.cpp(201,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  draw.vcxproj -> C:\Users\User\Documents\GitHub\Projekt4\draw2\Debug\draw2.exe
