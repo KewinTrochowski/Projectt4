@@ -22,6 +22,7 @@ INT value;
 
 // buttons
 HWND hwndButton;
+int speed = 1;
 const int Length =100;
 int which_sq;
 int which_sq2;
@@ -39,7 +40,7 @@ coordinates first{0,0,400,500};
 coordinates sec{ 0, 200,400,300};
 coordinates third{100, 300,500,200};
 
-coordinates square[4][4] = { 
+coordinates square[6][4] = { 
 						{100,0,500,500,true,
 						 150,0,550,500,true,
 						 150,50,550,450,true,
@@ -59,6 +60,16 @@ coordinates square[4][4] = {
 						 160,50,560,450,NULL,
 						 160,100,560,400,NULL,
 						 110,100,510,400,NULL},
+
+						 {20,0,420,500,NULL,
+						 70,0,470,500,NULL,
+						 70,50,470,450,NULL,
+						 20,50,420,450,NULL},
+
+						 {260,50,660,450,NULL,
+						 310,50,710,450,NULL,
+						 310,100,710,400,NULL,
+						 260,100,660,400,NULL},
 
 						 
 };
@@ -130,8 +141,8 @@ void move(coordinates &G,bool b)
 	if (b == 0)
 	{
 		int buff = G.x;
-		float x = G.x * cos( PI / 180) - G.y * sin( PI / 180);
-		float y = G.y * cos( PI / 180) + buff * sin( PI / 180);
+		float x = G.x * cos( speed*PI / 180) - G.y * sin(speed * PI / 180);
+		float y = G.y * cos(speed * PI / 180) + buff * sin(speed * PI / 180);
 		G.x = x;
 		G.y = y;
 	}
@@ -139,8 +150,8 @@ void move(coordinates &G,bool b)
 	else
 	{
 		int buff = G.x;
-		float x = G.x * cos(-PI / 180) - G.y * sin(-PI / 180);
-		float y = G.y * cos(-PI / 180) + buff * sin(-PI / 180);
+		float x = G.x * cos(-speed * PI / 180) - G.y * sin(-speed * PI / 180);
+		float y = G.y * cos(-speed * PI / 180) + buff * sin(-speed * PI / 180);
 		G.x = x;
 		G.y = y;
 	}
@@ -156,8 +167,8 @@ void move2(coordinates& G, bool b)
 	if (b == 0)
 	{
 		int buff = G.x;
-		float x = G.x * cos(PI / 180) - G.y * sin(PI / 180);
-		float y = G.y * cos(PI / 180) + buff * sin(PI / 180);
+		float x = G.x * cos(speed * PI / 180) - G.y * sin(speed * PI / 180);
+		float y = G.y * cos(speed * PI / 180) + buff * sin(speed * PI / 180);
 		G.x = x;
 		G.y = y;
 	}
@@ -165,8 +176,8 @@ void move2(coordinates& G, bool b)
 	else
 	{
 		int buff = G.x;
-		float x = G.x * cos(-PI / 180) - G.y * sin(-PI / 180);
-		float y = G.y * cos(-PI / 180) + buff * sin(-PI / 180);
+		float x = G.x * cos(-speed * PI / 180) - G.y * sin(-speed * PI / 180);
+		float y = G.y * cos(-speed * PI / 180) + buff * sin(-speed * PI / 180);
 		G.x = x;
 		G.y = y;
 	}
@@ -692,6 +703,18 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 				SetTimer(hWnd, TMR_1, 1, 0);
 			}
 			
+			break;
+		}
+		case _T('q'):
+		case _T('Q'):
+		{
+			speed = 1;
+			break;
+		}
+		case _T('e'):
+		case _T('E'):
+		{
+			speed = 2;
 			break;
 		}
 		}
