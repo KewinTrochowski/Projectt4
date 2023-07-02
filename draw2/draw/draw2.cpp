@@ -158,6 +158,7 @@ void move(coordinates &G,bool b)
 	G.Xx = G.x + mid_Ax;
 	G.Yy = mid_Ay -G.y;
 }
+
 void move2(coordinates& G, bool b)
 {
 	
@@ -221,6 +222,7 @@ void move3(coordinates& G, bool b)
 	G.Yy = mid_Ay - G.y;
 
 } 
+
 bool check_touch(coordinates& G, coordinates tab[], int w)
 {
 	int bcountx = 2;
@@ -283,6 +285,7 @@ int fall_info(coordinates tab[],int main)
 		return 0;
 	else return 2;
 }
+
 bool fall_info2(coordinates tab[], int main)
 {
 	int ver=-1,ver2;
@@ -381,6 +384,7 @@ bool fall_info2(coordinates tab[], int main)
 		 }
 		 return 0;
 }
+
 void fall(coordinates tab[])
 {
 	for (int i = 0; i < 4; i++)
@@ -397,6 +401,7 @@ void change_block(int wh,int b )
 		square[wh][i].block =b ;
 	}
 }
+
 void unlock(coordinates tab[],int main)
 {
 	for (int s = 0; s < how_many_sq; s++)
